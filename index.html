@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html id="html" class="standard">
+<head id="head" class="standard">
+  <base id="base" class="standard" href="">
+  <basefont id="basefont" class="obsolete">
+  <bgsound id="bgsound" class="nonstandard" src="">
+  <meta id="meta" class="standard" charset="utf-8">
+  <title id="title" class="standard">Elements</title>
+  <link id="link" class="standard" rel="stylesheet" href="blank.css">
+  <style id="style" class="standard">
+    body > div {
+      margin: 32px;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+  <script id="script" class="standard" src="blank.js"></script>
+</head>
+<body id="body" class="standard">
+  <div>a (anchor):
+    <a id="a" class="standard" href="#">content</a>
+  </div>
+  <div>abbr (abbreviation):
+    <abbr id="abbr" class="standard" title="title">content</abbr>
+  </div>
+  <div>acronym:
+    <acronym id="acronym" class="obsolete" title="title">content</acronym>
+  </div>
+  <div>address:
+    <address id="address" class="standard">content</address>
+  </div>
+  <div>applet:
+    <applet id="applet" class="obsolete" code="applet.class" width="160" height="80">
+      <param id="applet_param" class="standard" name="name" value="value">
+      content
+    </applet>
+  </div>
+  <div>article:
+    <article id="article" class="standard">content</article>
+  </div>
+  <div>aside:
+    <aside id="aside" class="standard">content</aside>
+  </div>
+  <div>audio:
+    <audio id="audio" class="standard" controls>
+      <source id="audio_source" class="standard" type="audio/mp3" src="audio.mp3">
+      <track id="audio_track" class="standard" kind="captions" label="English" srclang="en" src="captions.vtt">
+      content
+    </audio>
+  </div>
+  <div>b (bold):
+    <b class="standard" id="b">content</b>
+  </div>
+  <div>bdi (bidirectional isolation):
+    <bdi id="bdi" class="standard">content</bdi>
+  </div>
+  <div>bdo (bidirectional override):
+    <bdo id="bdo" class="standard">content</bdo>
+  </div>
+  <div>big:
+    <big id="big" class="obsolete">content</big>
+  </div>
+  <div>blink:
+    <blink id="blink" class="obsolete">content</blink>
+  </div>
+  <div>blockquote:
+    <blockquote id="blockquote" class="standard">content</blockquote>
+  </div>
+  <div>br (line break):
+    <br id="br" class="standard">
+  </div>
+  <div>button:
+    <button id="button" class="standard">content</button>
+  </div>
+  <div>canvas:
+    <canvas id="canvas" class="standard" width="160" height="80">content</canvas>
+    <script>
+    (function () {
+      var canvas = document.getElementById('canvas');
+
+      try {
+        var ctx = canvas.getContext('2d');
+
+        ctx.font = '48px serif';
+        ctx.strokeRect(0, 0, 160, 80);
+        ctx.fillText('Canvas', 10, 56);
+      } catch (error) {
+        console.warn('Canvas not supported:', error);
+      }
+    })();
+    </script>
+  </div>
+  <div>center:
+    <cite id="center" class="obsolete">content</cite>
+  </div>
+  <div>cite:
+    <cite id="cite" class="standard">content</cite>
+  </div>
+  <div>code:
+    <code id="code" class="standard">content</code>
+  </div>
+  <div>command:
+    <command id="command" class="obsolete" type="command" label="label" icon="icon.png">
+  </div>
+  <div>content:
+    <content id="content" class="deprecated">content</content>
+  </div>
+  <div>data:
+    <data id="data" class="standard" value="value">content</data>
+  </div>
+  <div>datalist:
+    <datalist id="datalist" class="standard">
+      <option id="datalist_option" class="standard" value="value">option</option>
+    </datalist>
+  </div>
+  <div>del (deleted):
+    <del id="del" class="standard">content</del>
+  </div>
+  <div>details:
+    <details id="details" class="standard">
+      <summary id="summary" class="standard">summary</summary>
+      content
+    </details>
+  </div>
+  <div>dfn (definition):
+    <dfn id="dfn" class="standard">content</dfn>
+  </div>
+  <div>dialog:
+    <dialog id="dialog" class="experimental">content</dialog>
+  </div>
+  <div>dir:
+    <dir id="dir" class="obsolete">content</dir>
+  </div>
+  <div>div:
+    <div id="div" class="standard">content</div>
+  </div>
+  <div>dl (description list):
+    <dl id="dl" class="standard">
+      <dt id="dt" class="standard">dt (term)</dt>
+      <dd id="dd" class="standard">dd (description)</dd>
+    </dl>
+  </div>
+  <div>element:
+    <element id="element" class="obsolete">content</element>
+  </div>
+  <div>em (emphasize):
+    <em id="em" class="standard">content</em>
+  </div>
+  <div>embed:
+    <embed id="embed" class="standard" width="160" height="80" type="text/html" src="content.html">
+  </div>
+  <div>fieldset:
+    <fieldset id="fieldset" class="standard">
+      <legend id="legend" class="standard">legend</legend>
+      content
+    </fieldset>
+  </div>
+  <div>figure:
+    <figure id="figure" class="standard">
+      <figcaption id="figcaption" class="standard">figcaption</figcaption>
+      <img id="figure_img" class="standard" src="image.png" alt="image">
+    </figure>
+  </div>
+  <div>font:
+    <font id="font" class="obsolete" color="#0000ff" face="Arial" size="4">content</font>
+  </div>
+  <div>footer:
+    <footer id="footer" class="standard">content</footer>
+  </div>
+  <div>form:
+    <form id="form" class="standard">content</form>
+  </div>
+  <div>h1 (heading level 1):
+    <h1 id="h1" class="standard">content</h1>
+  </div>
+  <div>h2 (heading level 2):
+    <h2 id="h2" class="standard">content</h2>
+  </div>
+  <div>h3 (heading level 3):
+    <h3 id="h3" class="standard">content</h3>
+  </div>
+  <div>h4 (heading level 4):
+    <h4 id="h4" class="standard">content</h4>
+  </div>
+  <div>h5 (heading level 5):
+    <h5 id="h5" class="standard">content</h5>
+  </div>
+  <div>h6 (heading level 6):
+    <h6 id="h6" class="standard">content</h6>
+  </div>
+  <div>header:
+    <header id="header" class="standard">content</header>
+  </div>
+  <div>hgroup:
+    <hgroup id="hgroup" class="experimental">
+      <h3 id="hgroup_heading" class="standard">content</h3>
+    </hgroup>
+  </div>
+  <div>hr (horizontal rule):
+    <hr id="hr" class="standard">
+  </div>
+  <div>i (italic):
+    <i id="i" class="standard">content</i>
+  </div>
+  <div>iframe (inline frame):
+    <iframe id="iframe" class="standard" width="160" height="80" src="content.html">content</iframe>
+  </div>
+  <div>image:
+    <image id="image" class="nonstandard" src="image.png">
+  </div>
+  <div>img (image):
+    <img id="img" class="standard" src="image.png" alt="image">
+  </div>
+  <div>input:
+    <input id="input" class="standard" value="value">
+  </div>
+  <div>input[type="button"]:
+    <input id="input_button" class="standard" type="button" value="value">
+  </div>
+  <div>input[type="checkbox"]:
+    <input id="input_checkbox" class="standard" type="checkbox" value="value">
+  </div>
+  <div>input[type="color"]:
+    <input id="input_color" class="standard" type="color" value="#000000">
+  </div>
+  <div>input[type="date"]:
+    <input id="input_date" class="standard" type="date" value="2000-01-01">
+  </div>
+  <div>input[type="datetime"]:
+    <input id="input_datetime" class="obsolete" type="datetime" value="2000-01-01T12:00">
+  </div>
+  <div>input[type="datetime-local"]:
+    <input id="input_datetime_local" class="standard" type="datetime-local" value="2000-01-01T12:00">
+  </div>
+  <div>input[type="email"]:
+    <input id="input_email" class="standard" type="email" value="email@example.com">
+  </div>
+  <div>input[type="file"]:
+    <input id="input_file" class="standard" type="file" value="value">
+  </div>
+  <div>input[type="hidden"]:
+    <input id="input_hidden" class="standard" type="hidden" value="value">
+  </div>
+  <div>input[type="image"]:
+    <input id="input_image" class="standard" type="image" value="image.png">
+  </div>
+  <div>input[type="month"]:
+    <input id="input_month" class="standard" type="month" value="2000-01">
+  </div>
+  <div>input[type="number"]:
+    <input id="input_number" class="standard" type="number" value="0">
+  </div>
+  <div>input[type="password"]:
+    <input id="input_password" class="standard" type="password" value="value">
+  </div>
+  <div>input[type="radio"]:
+    <input id="input_radio" class="standard" type="radio" value="value">
+  </div>
+  <div>input[type="range"]:
+    <input id="input_range" class="standard" type="range" value="0" min="0" max="10">
+  </div>
+  <div>input[type="reset"]:
+    <input id="input_reset" class="standard" type="reset" value="value">
+  </div>
+  <div>input[type="search"]:
+    <input id="input_search" class="standard" type="search" value="value">
+  </div>
+  <div>input[type="submit"]:
+    <input id="input_submit" class="standard" type="submit" value="value">
+  </div>
+  <div>input[type="tel"]:
+    <input id="input_tel" class="standard" type="tel" value="12345">
+  </div>
+  <div>input[type="text"]:
+    <input id="input_text" class="standard" type="text" value="value">
+  </div>
+  <div>input[type="time"]:
+    <input id="input_time" class="standard" type="time" value="12:00">
+  </div>
+  <div>input[type="url"]:
+    <input id="input_url" class="standard" type="url" value="http://example.com">
+  </div>
+  <div>input[type="week"]:
+    <input id="input_week" class="standard" type="week" value="2000-W01">
+  </div>
+  <div>ins (inserted):
+    <ins id="ins" class="standard">content</ins>
+  </div>
+  <div>isindex:
+    <isindex id="isindex" class="deprecated" prompt="prompt">
+  </div>
+  <div>kbd (keyboard):
+    <kbd id="kbd" class="standard">content</kbd>
+  </div>
+  <div>keygen:
+    <keygen id="keygen" class="deprecated" name="name" challenge="challenge" keytype="keytype" keyparams="keyparams">
+  </div>
+  <div>label:
+    <label id="label" class="standard">content</label>
+  </div>
+  <div>listing:
+    <listing id="listing" class="obsolete">content</listing>
+  </div>
+  <div>main:
+    <main id="main" class="standard">content</main>
+  </div>
+  <div>map:
+    <map id="map" class="standard" name="map">
+      <area id="area" class="standard" shape="rect" coords="10,10,150,70" href="#">
+    </map>
+    <img id="map_img" class="standard" usemap="map" src="image.png" alt="image">
+  </div>
+  <div>mark:
+    <mark id="mark" class="standard">content</mark>
+  </div>
+  <div>marquee:
+    <marquee id="marquee" class="obsolete">content</marquee>
+  </div>
+  <div>menu:
+    <menu id="menu" class="experimental" type="context">
+      <menuitem id="menuitem" class="experimental">content</menuitem>
+    </menu>
+    <div id="menu_div" class="standard" contextmenu="menu">menu</div>
+  </div>
+  <div>meter:
+    <meter id="meter" class="standard" value="50" min="0" max="100">content</meter>
+  </div>
+  <div>multicol:
+    <multicol id="multicol" class="nonstandard">content</multicol>
+  </div>
+  <div>nav (navigation):
+    <nav id="nav" class="standard">content</nav>
+  </div>
+  <div>nextid:
+    <nextid id="nextid" class="deprecated" n=""></nextid>
+  </div>
+  <div>nobr:
+    <nobr id="nobr" class="nonstandard">content</nobr>
+  </div>
+  <div>noembed:
+    <noembed id="noembed" class="nonstandard">content</noembed>
+  </div>
+  <div>noscript:
+    <noscript id="noscript" class="standard">content</noscript>
+  </div>
+  <div>object:
+    <object id="object" class="standard" width="160" height="80" type="text/html" data="content.html">
+      <param id="param" class="standard" name="name" value="value">
+      content
+    </object>
+  </div>
+  <div>ol (ordered list):
+    <ol id="ol" class="standard">
+      <li id="ol_li" class="standard">li (list item)</li>
+    </ol>
+  </div>
+  <div>output:
+    <output id="output" class="standard">content</output>
+  </div>
+  <div>p (paragraph):
+    <p id="p" class="standard">content</p>
+  </div>
+  <div>picture:
+    <picture id="picture" class="standard">
+      <source id="picture_source" class="standard" type="image/svg+xml" srcset="image.svg">
+      <img id="picture_img" class="standard" src="image.png" alt="image">
+    </picture>
+  </div>
+  <div>pre (preformatted):
+    <pre id="pre" class="standard">content</pre>
+  </div>
+  <div>progress:
+    <progress id="progress" class="standard" value="50" max="100">content</progress>
+  </div>
+  <div>q (quote):
+    <q id="q" class="standard">content</q>
+  </div>
+  <div>ruby:
+    <ruby id="ruby" class="standard">
+      <rp id="rp" class="standard">parentheses</rp>
+      <rt id="rt" class="standard">text</rt>
+      <rtc id="rtc" class="standard">text</rtc>
+    </ruby>
+  </div>
+  <div>s (strike-through):
+    <s id="s" class="standard">content</s>
+  </div>
+  <div>samp (sample):
+    <samp id="samp" class="standard">content</samp>
+  </div>
+  <div>section:
+    <section id="section" class="standard">content</section>
+  </div>
+  <div>select:
+    <select id="select" class="standard">
+      <option id="option" class="standard" value="option">option</option>
+      <optgroup id="optgroup" class="standard" label="optgroup">
+        <option id="optgroup_option" class="standard" value="option">option</option>
+      </optgroup>
+    </select>
+  </div>
+  <div>shadow:
+    <shadow id="shadow" class="obsolete">content</shadow>
+  </div>
+  <div>small:
+    <small id="small" class="standard">content</small>
+  </div>
+  <div>span:
+    <span id="span" class="standard">content</span>
+  </div>
+  <div>strike:
+    <strike id="strike" class="obsolete">content</strike>
+  </div>
+  <div>strong:
+    <strong id="strong" class="standard">content</strong>
+  </div>
+  <div>sub (lowered text):
+    <sub id="sub" class="standard">content</sub>
+  </div>
+  <div>sup (raised text):
+    <sup id="sup" class="standard">content</sup>
+  </div>
+  <div>svg:
+    <svg id="svg" class="standard" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160" height="80">
+      <rect width="100%" height="100%" stroke="black" fill="transparent"></rect>
+      <text x="80" y="56" font-size="48" text-anchor="middle" fill="black">SVG</text>
+    </svg>
+  </div>
+  <div>table:
+    <table id="table" class="standard">
+      <caption id="caption" class="standard">caption</caption>
+      <colgroup id="colgroup" class="standard">
+        <col id="col" class="standard" span="2">
+      </colgroup>
+      <thead id="thead" class="standard">
+        <tr id="thead_tr" class="standard">
+          <th id="thead_th" class="standard">head</th>
+          <td id="thead_td" class="standard">content</td>
+        </tr>
+      </thead>
+      <tbody id="tbody" class="standard">
+        <tr id="tr" class="standard">
+          <th id="th" class="standard">body</th>
+          <td id="td" class="standard">content</td>
+        </tr>
+      </tbody>
+      <tfoot id="tfoot" class="standard">
+        <tr id="tfoot_tr" class="standard">
+          <th id="tfoot_th" class="standard">foot</th>
+          <td id="tfoot_td" class="standard">content</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <div>template:
+    <template id="template" class="standard">content</template>
+  </div>
+  <div>textarea:
+    <textarea id="textarea" class="standard">content</textarea>
+  </div>
+  <div>time:
+    <time id="time" class="standard">content</time>
+  </div>
+  <div>tt (teletype text):
+    <tt id="tt" class="obsolete">content</tt>
+  </div>
+  <div>u (underline):
+    <u id="u" class="standard">content</u>
+  </div>
+  <div>ul (unordered list):
+    <ul id="ul" class="standard">
+      <li id="li" class="standard">li (list item)</li>
+    </ul>
+  </div>
+  <div>var (variable):
+    <var id="var" class="standard">content</var>
+  </div>
+  <div>video:
+    <video id="video" class="standard" controls>
+      <source id="source" class="standard" type="video/mp4" src="video.mp4">
+      <track id="track" class="standard" kind="subtitles" label="English" srclang="en" src="subtitles.vtt">
+      content
+    </video>
+  </div>
+  <div>wbr (word break opportunity):
+    <wbr id="wbr" class="standard">
+  </div>
+  <div>xmp:
+    <xmp id="xmp" class="obsolete">content</xmp>
+  </div>
+  <div>custom:
+    <x-custom id="custom" class="custom"></x-custom>
+  </div>
+  <div>unknown:
+    <unknown id="unknown" class="custom"></unknown>
+  </div>
+  <script id="inline_script" class="standard">
+  (function () {
+    var all = document.getElementsByTagName('*');
+    var elements = {};
+    var toString = Object.prototype.toString;
+
+    for (var i = 0, length = all.length, element, tagName, id; i < length; i++) {
+      element = all[i];
+      tagName = element.tagName.toLowerCase();
+      id = element.getAttribute('id');
+
+      if (id) {
+          elements[id] = element;
+
+        if (toString.call(element).indexOf('Unknown') >= 0) {
+          console.log('Unknown: ' + tagName + ' (' + element.className + ')');
+        }
+
+        if (id.indexOf('_') < 0 && (/^[a-z1-6]+$/).test(tagName) && tagName !== id) {
+          console.log('Converted: ' + id + ' => ' + tagName);
+        }
+      }
+    }
+
+    window.elements = elements;
+  })();
+  </script>
+</body>
+</html>
